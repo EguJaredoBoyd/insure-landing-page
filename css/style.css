@@ -47,6 +47,7 @@ a {
   color: var(--primary-dark-violet);
   background-color: var(--neutral-very-light-gray);
   font-weight: 700;
+  width: max-content;
 }
 
 .btn-white {
@@ -70,6 +71,49 @@ header nav a {
 header nav button {
   background-color: transparent;
   border: none;
+}
+
+/* Main */
+/* Hero Section */
+#hero {
+  background-color: var(--primary-dark-violet);
+  color: var(--neutral-very-light-gray);
+  display: grid;
+  gap: 1rem;
+}
+
+#hero > div {
+  height: max-content;
+}
+
+#hero img {
+  width: 100%;
+  /* display: none; */
+}
+
+.hero-content {
+  padding: 5rem 1rem;
+}
+
+.hero-content > div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+}
+
+.hero-content p {
+  font-size: 0.8rem;
+}
+
+.hero-content hr {
+  display: none;
 }
 
 /* Footer */
@@ -96,5 +140,37 @@ header nav button {
 
   header nav button {
     display: none;
+  }
+
+  #hero {
+    padding: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-image {
+    margin-bottom: -10rem;
+  }
+
+  .hero-content {
+    padding: 0;
+    order: -1;
+  }
+
+  .hero-content > div {
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .hero-content hr {
+    display: block;
+    width: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    line-height: 1;
   }
 }

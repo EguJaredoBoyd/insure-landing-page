@@ -43,20 +43,31 @@
       <!-- Hero Section -->
       <section id="hero">
         <!-- Hero Image -->
-        <div>
-          <img src="" alt="" />
+        <div class="hero-image">
+          <img
+            src="./images/image-intro-mobile.jpg"
+            srcset="
+              ./images/image-intro-mobile.jpg   480w,
+              ./images/image-intro-desktop.jpg 1024w
+            "
+            sizes="(max-width: 480px) 100vw, 1024px"
+            alt="Example image"
+          />
         </div>
 
         <!-- Hero Content -->
-        <div>
+        <div class="hero-content">
           <hr />
-          <h1>Humanizing your insurance.</h1>
-          <p>
-            Get your life insurance coverage easier and faster. We blend our
-            expertise and technology to help you find the plan that’s right for
-            you. Ensure you and your loved ones are protected.
-          </p>
-          <a href="#" class="btn btn-white">View Plans</a>
+
+          <div>
+            <h1 class="dm-serif-display-regular">Humanizing your insurance.</h1>
+            <p>
+              Get your life insurance coverage easier and faster. We blend our
+              expertise and technology to help you find the plan that's right
+              for you. Ensure you and your loved ones are protected.
+            </p>
+            <a href="#" class="btn btn-white">View Plans</a>
+          </div>
         </div>
       </section>
     </main>
