@@ -1,0 +1,100 @@
+/* CSS Reset */
+@import url("./reset.css");
+
+/* Global Styles & Variables */
+:root {
+  --primary-dark-violet: hsl(256, 26%, 20%);
+  --primary-grayish-blue: hsl(216, 30%, 68%);
+  --neutral-very-dark-violet: hsl(270, 9%, 17%);
+  --neutral-dark-grayish-violet: hsl(273, 4%, 51%);
+  --neutral-very-light-gray: hsl(0, 0%, 98%);
+}
+
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.karla-400 {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.karla-700 {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary-dark-violet);
+  color: var(--primary-dark-violet);
+  background-color: var(--neutral-very-light-gray);
+  font-weight: 700;
+}
+
+.btn-white {
+  color: var(--neutral-very-light-gray);
+  background-color: var(--primary-dark-violet);
+  border: 1px solid var(--neutral-very-light-gray);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header nav a {
+  display: none;
+}
+
+header nav button {
+  background-color: transparent;
+  border: none;
+}
+
+/* Footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsive Styles for Tablet Screens */
+@media screen and (min-width: 768px) {
+  header nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  header nav a {
+    display: block;
+  }
+
+  header nav button {
+    display: none;
+  }
+}
