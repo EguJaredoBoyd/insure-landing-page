@@ -105,15 +105,17 @@ header nav button {
 }
 
 .hero-content h1 {
-  font-size: 2rem;
-}
-
-.hero-content p {
-  font-size: 0.8rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1;
 }
 
 .hero-content hr {
   display: none;
+}
+
+/* Features Section */
+#features {
+  padding: 5rem 1rem;
 }
 
 /* Footer */
@@ -169,8 +171,11 @@ header nav button {
     margin-bottom: 5rem;
   }
 
-  .hero-content h1 {
-    font-size: 3rem;
-    line-height: 1;
+  .hero-content p {
+    font-size: 0.8rem;
+  }
+
+  #features {
+    padding: 5rem;
   }
 }
