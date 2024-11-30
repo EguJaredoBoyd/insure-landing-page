@@ -2,12 +2,17 @@
 @import url("./reset.css");
 
 /* Global Styles & Variables */
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-dark-violet: hsl(256, 26%, 20%);
   --primary-grayish-blue: hsl(216, 30%, 68%);
   --neutral-very-dark-violet: hsl(270, 9%, 17%);
   --neutral-dark-grayish-violet: hsl(273, 4%, 51%);
   --neutral-very-light-gray: hsl(0, 0%, 98%);
+  --shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 .dm-serif-display-regular {
@@ -29,6 +34,13 @@
   font-style: normal;
 }
 
+.karla-500 {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .karla-700 {
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
@@ -42,18 +54,28 @@ a {
 }
 
 .btn {
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--primary-dark-violet);
+  padding: 0.5rem 2rem;
+  border: 2px solid var(--primary-dark-violet);
   color: var(--primary-dark-violet);
-  background-color: var(--neutral-very-light-gray);
-  font-weight: 700;
+  background: transparent;
+  font-weight: 600;
+  font-size: 0.75rem;
   width: max-content;
+}
+
+.btn:hover {
+  color: var(--neutral-very-light-gray);
+  background-color: var(--primary-dark-violet);
 }
 
 .btn-white {
   color: var(--neutral-very-light-gray);
-  background-color: var(--primary-dark-violet);
   border: 1px solid var(--neutral-very-light-gray);
+}
+
+.btn-white:hover {
+  color: var(--primary-dark-violet);
+  background-color: var(--neutral-very-light-gray);
 }
 
 /* Header */
@@ -62,6 +84,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  font-size: 0.8rem;
 }
 
 header nav a {
@@ -88,7 +111,7 @@ header nav button {
 
 #hero img {
   width: 100%;
-  /* display: none; */
+  box-shadow: var(--box-shadow);
 }
 
 .hero-content {
@@ -118,6 +141,10 @@ header nav button {
   padding: 5rem 1rem;
 }
 
+#features img {
+  box-shadow: var(--shadow);
+}
+
 /* Footer */
 
 .attribution {
@@ -126,56 +153,4 @@ header nav button {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-/* Responsive Styles for Tablet Screens */
-@media screen and (min-width: 768px) {
-  header nav {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-  }
-
-  header nav a {
-    display: block;
-  }
-
-  header nav button {
-    display: none;
-  }
-
-  #hero {
-    padding: 5rem;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .hero-image {
-    margin-bottom: -10rem;
-  }
-
-  .hero-content {
-    padding: 0;
-    order: -1;
-  }
-
-  .hero-content > div {
-    display: flex;
-    text-align: left;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-
-  .hero-content hr {
-    display: block;
-    width: 5rem;
-    margin-bottom: 5rem;
-  }
-
-  .hero-content p {
-    font-size: 0.8rem;
-  }
-
-  #features {
-    padding: 5rem;
-  }
 }
