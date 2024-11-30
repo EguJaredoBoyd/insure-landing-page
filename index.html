@@ -30,98 +30,116 @@
   <body class="karla-400">
     <!-- Header -->
     <header>
-      <div><img src="./images/logo.svg" alt="Insure logo" /></div>
-      <nav>
-        <button><img src="./images/icon-hamburger.svg" alt="Menu" /></button>
-        <a href="#">How We Work</a>
-        <a href="#">Blog</a>
-        <a href="#">Account</a>
-        <a href="#" class="btn">View Plans</a>
-      </nav>
+      <div class="container">
+        <div><img src="./images/logo.svg" alt="Insure logo" /></div>
+        <nav>
+          <button><img src="./images/icon-hamburger.svg" alt="Menu" /></button>
+          <a href="#">How We Work</a>
+          <a href="#">Blog</a>
+          <a href="#">Account</a>
+          <a href="#" class="btn">View Plans</a>
+        </nav>
+      </div>
     </header>
 
     <!-- Main -->
     <main>
       <!-- Hero Section -->
       <section id="hero">
-        <!-- Hero Image -->
-        <div class="hero-image">
-          <img
-            src="./images/image-intro-mobile.jpg"
-            srcset="
-              ./images/image-intro-mobile.jpg   480w,
-              ./images/image-intro-desktop.jpg 1024w
-            "
-            sizes="(max-width: 480px) 100vw, 1024px"
-            alt="Example image"
-          />
-        </div>
+        <div class="container">
+          <!-- Hero Image -->
+          <div class="hero-image">
+            <img
+              src="./images/image-intro-mobile.jpg"
+              srcset="
+                ./images/image-intro-mobile.jpg   480w,
+                ./images/image-intro-desktop.jpg 1024w
+              "
+              sizes="(max-width: 480px) 100vw, 1024px"
+              alt="Example image"
+            />
+          </div>
 
-        <!-- Hero Content -->
-        <div class="hero-content">
-          <hr />
+          <!-- Hero Content -->
+          <div class="hero-content">
+            <hr />
 
-          <div>
-            <h1 class="dm-serif-display-regular">Humanizing your insurance.</h1>
-            <p>
-              Get your life insurance coverage easier and faster. We blend our
-              expertise and technology to help you find the plan that's right
-              for you. Ensure you and your loved ones are protected.
-            </p>
-            <a href="#" class="btn btn-white">View Plans</a>
+            <div>
+              <h1 class="dm-serif-display-regular">
+                Humanizing your insurance.
+              </h1>
+              <p>
+                Get your life insurance coverage easier and faster. We blend our
+                expertise and technology to help you find the plan that's right
+                for you. Ensure you and your loved ones are protected.
+              </p>
+              <a href="#" class="btn btn-white">View Plans</a>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Features Section -->
       <section id="features">
-        <hr />
+        <div class="container">
+          <hr />
 
-        <h2>We're Different</h2>
+          <h2 class="dm-serif-display-regular">We're Different</h2>
 
-        <!-- Features -->
-        <div class="features-list">
-          <div class="feature">
-            <div>
-              <img
-                src="./images/icon-snappy-process.svg"
-                alt="Snappy Process"
-              />
+          <!-- Features -->
+          <div class="features-list">
+            <div class="feature">
+              <div>
+                <img
+                  src="./images/icon-snappy-process.svg"
+                  alt="Snappy Process"
+                />
+              </div>
+
+              <h3 class="dm-serif-display-regular">Snappy Process</h3>
+              <p>
+                Our application process can be completed in minutes, not hours.
+                Don't get stuck filling in tedious forms.
+              </p>
             </div>
 
-            <h3>Snappy Process</h3>
-            <p>
-              Our application process can be completed in minutes, not hours.
-              Don't get stuck filling in tedious forms.
-            </p>
-          </div>
+            <div class="feature">
+              <div>
+                <img
+                  src="./images/icon-affordable-prices.svg"
+                  alt="Affordable Prices"
+                />
+              </div>
 
-          <div class="feature">
-            <div>
-              <img
-                src="./images/icon-affordable-prices.svg"
-                alt="Affordable Prices"
-              />
+              <h3 class="dm-serif-display-regular">Affordable Prices</h3>
+              <p>
+                We don't want you worrying about high monthly costs. Our prices
+                may be low, but we still offer the best coverage possible.
+              </p>
             </div>
 
-            <h3>Affordable Prices</h3>
-            <p>
-              We don't want you worrying about high monthly costs. Our prices
-              may be low, but we still offer the best coverage possible.
-            </p>
-          </div>
+            <div class="feature">
+              <div>
+                <img src="./images/icon-people-first.svg" alt="People First" />
+              </div>
 
-          <div class="feature">
-            <div>
-              <img src="./images/icon-people-first.svg" alt="People First" />
+              <h3 class="dm-serif-display-regular">People First</h3>
+              <p>
+                Our plans aren't full of conditions and clauses to prevent
+                payouts. We make sure you're covered when you need it.
+              </p>
             </div>
-
-            <h3>People First</h3>
-            <p>
-              Our plans aren't full of conditions and clauses to prevent
-              payouts. We make sure you're covered when you need it.
-            </p>
           </div>
+        </div>
+      </section>
+
+      <section id="cta" class="container">
+        <!-- CTA -->
+        <div class="container">
+          <h2 class="dm-serif-display-regular">
+            Find out more about how we work
+          </h2>
+          <a href="/" class="btn btn-white">How We Work</a>
         </div>
       </section>
     </main>
