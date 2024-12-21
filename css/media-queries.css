@@ -98,4 +98,23 @@
   #cta .container a {
     justify-self: end;
   }
+
+  .footer-top .container {
+    flex-direction: row;
+  }
+
+  .footer-top hr {
+    flex: 1;
+  }
+
+  .footer-bottom .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-bottom .container {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: left;
+  }
 }
