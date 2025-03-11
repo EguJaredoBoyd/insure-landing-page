@@ -80,6 +80,7 @@ img {
   padding: 0.5rem 2rem;
   border: 2px solid var(--primary-dark-violet);
   color: var(--primary-dark-violet);
+  font-weight: 600;
   background: transparent;
   letter-spacing: 1.5px;
   width: max-content;
@@ -113,6 +114,7 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
   padding: 1rem;
   font-size: 0.8rem;
 }
